@@ -1,7 +1,7 @@
 ﻿# SIH-2026-Project
 Team:
 
-Priyam Dev Singh
+Priyam Dev Singh (Team Lead)
 
 Rayyan Rasool Mir
 
