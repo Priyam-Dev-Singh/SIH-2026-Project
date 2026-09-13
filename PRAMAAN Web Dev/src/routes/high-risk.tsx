@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { VerificationsPage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/high-risk")({ head: () => ({ meta: [{ title: "High-Risk Cases | PRAMAAN" }, { name: "description", content: "Investigate priority identity and document screening cases." }, { property: "og:title", content: "High-Risk Cases | PRAMAAN" }, { property: "og:description", content: "Investigate priority identity and document screening cases." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <VerificationsPage highRiskOnly /> });

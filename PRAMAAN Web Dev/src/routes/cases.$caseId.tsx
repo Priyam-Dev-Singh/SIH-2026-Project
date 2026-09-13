@@ -1,0 +1,4 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { InvestigationPage } from "@/components/pramaan/investigation-page";
+export const Route = createFileRoute("/cases/$caseId")({ head: ({ params }) => ({ meta: [{ title: `Case ${params.caseId} | PRAMAAN` }, { name: "description", content: "Review explainable identity and document screening evidence." }, { property: "og:title", content: `Case ${params.caseId} | PRAMAAN` }, { property: "og:description", content: "Review explainable identity and document screening evidence." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: CaseRoute });
+function CaseRoute() { const { caseId } = Route.useParams(); return <InvestigationPage caseId={caseId} />; }

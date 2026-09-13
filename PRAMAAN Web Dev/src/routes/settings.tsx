@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SettingsPage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/settings")({ head: () => ({ meta: [{ title: "Verification Settings | PRAMAAN" }, { name: "description", content: "Configure prototype screening thresholds and checkpoint displays." }, { property: "og:title", content: "Verification Settings | PRAMAAN" }, { property: "og:description", content: "Configure prototype screening thresholds and checkpoint displays." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: SettingsPage });

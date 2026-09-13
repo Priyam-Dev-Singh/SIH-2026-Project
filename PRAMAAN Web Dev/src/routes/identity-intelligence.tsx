@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { IdentityIntelligencePage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/identity-intelligence")({ head: () => ({ meta: [{ title: "Identity Intelligence | PRAMAAN" }, { name: "description", content: "Inspect identity verification history and observed evidence patterns." }, { property: "og:title", content: "Identity Intelligence | PRAMAAN" }, { property: "og:description", content: "Inspect identity verification history and observed evidence patterns." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: IdentityIntelligencePage });

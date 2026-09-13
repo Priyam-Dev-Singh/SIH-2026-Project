@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AuditTrailPage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/audit-trail")({ head: () => ({ meta: [{ title: "Secure Audit Trail | PRAMAAN" }, { name: "description", content: "Trace simulated verification and authorized investigator actions." }, { property: "og:title", content: "Secure Audit Trail | PRAMAAN" }, { property: "og:description", content: "Trace simulated verification and authorized investigator actions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AuditTrailPage });

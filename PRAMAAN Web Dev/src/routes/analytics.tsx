@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AnalyticsPage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/analytics")({ head: () => ({ meta: [{ title: "Operational Analytics | PRAMAAN" }, { name: "description", content: "Analyze verification volumes, risk distribution, and checkpoint trends." }, { property: "og:title", content: "Operational Analytics | PRAMAAN" }, { property: "og:description", content: "Analyze verification volumes, risk distribution, and checkpoint trends." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AnalyticsPage });

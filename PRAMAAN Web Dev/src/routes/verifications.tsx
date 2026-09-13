@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { VerificationsPage } from "@/components/pramaan/operations-pages";
+export const Route = createFileRoute("/verifications")({ head: () => ({ meta: [{ title: "Verification Queue | PRAMAAN" }, { name: "description", content: "Review checkpoint identity screening outcomes and evidence." }, { property: "og:title", content: "Verification Queue | PRAMAAN" }, { property: "og:description", content: "Review checkpoint identity screening outcomes and evidence." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: VerificationsPage });
